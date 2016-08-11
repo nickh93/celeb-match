@@ -9,16 +9,34 @@
   </head>
   <body>
     <div class="container">
-    <h1>Celebrity Matching!>
+    <h1>Celebrity Matching!</h1>
     <h2>Fill out our Survey!</h2>
     <form id="info">
+      <div class="form-group">
+        <label for="age"><h3>How old are you?:</h3></label>
+        <input id="age" class="form-control" type="text">
+      </div>
+      <label for="gender"><h3>What is your gender?</h3></label>
       <select class="form-control" id="gender">
         <option>male</option>
         <option>female</option>
       </select>
+      <label for="orientation"><h3>What is your sexual orientation?:</h3></label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="orientation" value="straight" checked>
+          Straight
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="orientation" value="homo-sexual">
+          Homo-sexual
+        </label>
+      </div>
+
+    <button type="submit" class="btn">FIND YOUR MATCH!</button>
     </form>
-
-
     </div>
   </body>
 </html>
